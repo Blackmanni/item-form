@@ -1,0 +1,147 @@
+﻿/* General form styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+    form:hover {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+/* Input fields styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background: #f9f9f9;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus {
+        border: 1px solid #74c1ed;
+        box-shadow: 0 0 8px rgba(116, 193, 237, 0.2);
+    }
+
+/* Item selection styling */
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #74ebd5;
+    padding-bottom: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+    }
+
+        .item img:hover {
+            transform: scale(1.05);
+        }
+
+.item-details {
+    flex: 1;
+}
+
+    .item-details p {
+        margin: 0;
+        font-weight: 500;
+        color: #555;
+    }
+
+.quantity {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Subtotal display styling */
+#subtotal {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #333;
+    padding: 10px;
+    background-color: #eafaf1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Submit button styling */
+button {
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+    button:hover {
+        background: linear-gradient(135deg, #6ad5c9 0%, #8d8fc7 100%);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
